@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.UploadPrescription_Activity">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ordergead"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorBlue">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/mercadocom" />-->
+<!--    </LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order medicines in 3 steps"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/check1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/check2" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/check3" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/uploadPrescriptionImg"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/uploadicon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Upload photo of your prescription"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/opengallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btngallery"
+                    android:gravity="center"
+                    android:text="GALLERY"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/UploadPrescriptionQtyEtx"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Enter Quantity"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/address_style"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:id="@+id/UploadPrescriptionPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Enter 10-Digit Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/address_style"
+                    android:textColor="@color/colorBlack" />
+
+                <Button
+                    android:id="@+id/uploadPrescriptionBtn"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/uploadbutton"
+                    android:gravity="center"
+                    android:text="PROCEED"
+                    android:textColor="@color/colorWhite" />
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/prescriptionRecyclerView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#E1E1D8"-->
+<!--                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+<!--                    app:spanCount="2" />-->
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

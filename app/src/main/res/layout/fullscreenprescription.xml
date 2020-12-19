@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/viewPresriptionImage"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="350dp"-->
+<!--                android:src="@mipmap/loader_png" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/viewPresriptionReorder"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/round_button"-->
+<!--                android:text="Re-Order"-->
+<!--                android:textColor="@color/colorWhite" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:id="@+id/optionsLayout"-->
+<!--                android:visibility="gone"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/ic_remove"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:id="@+id/viewPresriptionReorderRemove"-->
+<!--                    android:clickable="true"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:background="@drawable/cart_page_round_buttons"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:text="1"-->
+<!--                    android:id="@+id/viewPresriptionReorderQty"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/colorBlack"/>-->
+
+<!--                <ImageButton-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:src="@drawable/ic_add"-->
+<!--                    android:background="@drawable/cart_page_round_buttons"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:id="@+id/viewPresriptionReorderAdd"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:clickable="true" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/optionsLayoutReleative">-->
+
+
+
+<!--        </RelativeLayout>-->
+
+
+
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/bgcol"
+            android:scaleType="centerCrop"
+            android:id="@+id/viewPresriptionImage"
+            android:layout_height="350dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:background="@drawable/reorderbtn"
+                android:text="RE-ORDER"
+                android:id="@+id/viewPresriptionReorder"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/viewPresriptionMobile"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="10-Digit Mobile Number...."
+                android:inputType="number"
+                android:maxLength="10"
+                android:visibility="gone"
+                android:background="@drawable/qtytext"/>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/viewPresriptionQty"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="quantity...."
+                android:visibility="gone"
+                android:background="@drawable/qtytext"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:weightSum="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="Cancel"
+                android:id="@+id/viewPresriptionReorderCancel"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorgrey"
+                android:layout_weight="10"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="@color/colorBlue"
+                android:text="Order"
+                android:id="@+id/viewPresriptionReorderOrder"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="10"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

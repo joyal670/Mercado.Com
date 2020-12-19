@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="1000"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="3"
+            app:sliderStartAutoCycle="true" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Vegetableshop"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardElevation="10dp"
+                android:clickable="true"
+                android:layout_weight="5"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/veg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Vegetable Shops"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Restaurant"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                android:clickable="true"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/restaurant"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Restaurants"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Fishmarket"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:clickable="true"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fish"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Fishmart"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Medicalshop"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:layout_weight="5"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/medicine"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Medical Shops"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Provision"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:clickable="true"
+                android:layout_weight="5"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/supermark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Super Market"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BakeryShop"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="5"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:src="@drawable/bakery"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Bakery"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Butchershop"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="5"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/butchu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Butcher Shops"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Fashion"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="5"
+                app:cardElevation="10dp"
+                android:clickable="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fashion"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Fashion"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Electronicshop"
+                android:layout_width="190dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                app:cardElevation="10dp"
+                android:orientation="vertical"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/elcto"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Electronics and Accessories"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

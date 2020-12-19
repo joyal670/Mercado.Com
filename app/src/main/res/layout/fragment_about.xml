@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.About_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorBlue"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/gruplogo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mercado.com"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="Delivery of grocery, vegetables, meat, medicines and more in 45 minutes"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Version"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="20dp"
+              android:textColor="@color/colorBlack"
+              android:textStyle="bold"
+              android:textSize="20sp"/>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="version"
+                  android:id="@+id/frgmentabt_version"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Update Date"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sep, 2020"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mercadocome08@gmail.com"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

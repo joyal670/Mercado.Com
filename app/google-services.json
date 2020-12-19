@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1036540053063",
+    "firebase_url": "https://mercado-20bad.firebaseio.com",
+    "project_id": "mercado-20bad",
+    "storage_bucket": "mercado-20bad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036540053063:android:5d05851396ece146fe5362",
+        "android_client_info": {
+          "package_name": "com.mercado.mercadocom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036540053063-md4ekbthpk4khp74j2im93dopj1cq3p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaDc1QCR6hdEcQW6QlvqkJ09ZBzC2hS0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036540053063-md4ekbthpk4khp74j2im93dopj1cq3p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

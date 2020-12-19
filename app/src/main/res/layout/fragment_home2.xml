@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Home2_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_root">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorBlue">
+
+                <Button
+                    android:id="@+id/searchHome2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Search Products"
+                    android:gravity="left|center"
+                    android:drawableLeft="@drawable/ic_baseline_search"
+                    android:paddingLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/searchbarround"/>
+
+
+            </LinearLayout>
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/home2imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderAutoCycleEnabled="true"
+                app:sliderIndicatorAnimationDuration="1000"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="3"
+                app:sliderStartAutoCycle="true" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="82dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newVegetableshopHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/veg"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Vegetable Shop"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newFishmarketHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/fish"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Fish Market"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newRestaurantHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/restaurant"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Restaurants"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newProvisionHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="53dp"
+                                android:src="@drawable/supermark" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="Super Market"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newButchershopHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/butchu"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Butcher Shop"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newBakeryShopHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/bakery"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="29dp"
+                                android:gravity="center"
+                                android:text="Bakery"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newMedicalshopHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/medicine"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Medical Shop"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newElectronicshopHome2"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/elcto"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Electronic and Accessories"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/newFashionHome2"
+                        android:layout_marginRight="3dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:src="@drawable/fashion"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:text="Fashion Store"
+                                android:textColor="@color/colorBlack"/>
+                        </LinearLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/homescreen2"/>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonCallBtnHome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:backgroundTint="#34C33A"
+            android:src="@drawable/ic_baseline_call"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="25dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

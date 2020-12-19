@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/myorders"
+            android:title="MY ORDERS"
+            android:icon="@drawable/ic_orders"/>
+        <item
+            android:id="@+id/medicalorders"
+            android:title="MEDICAL ORDERS"
+            android:icon="@drawable/ic_baseline_local_hospital_24"/>
+        <item
+            android:id="@+id/mycart"
+            android:title="MY CART"
+            android:icon="@drawable/ic_shopping_cart"/>
+        <item
+            android:id="@+id/settings"
+            android:title="CHANGE PASSWORD"
+            android:icon="@drawable/ic_settings"/>
+        <item
+            android:id="@+id/feedback"
+            android:title="FEEDBACK"
+            android:icon="@drawable/ic_feedback"/>
+        <item
+            android:id="@+id/about"
+            android:title="ABOUT"
+            android:icon="@drawable/ic_baseline_info"/>
+        <item
+            android:id="@+id/chat"
+            android:title="HELP"
+            android:icon="@drawable/ic_baseline_chat_24"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="LOGOUT"
+            android:icon="@drawable/ic_exit"/>
+
+    </group>
+
+</menu>
